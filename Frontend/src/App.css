@@ -1,0 +1,30 @@
+.dashboard {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.dashboard h1 {
+  margin-bottom: 10px;
+}
+
+.dashboard p {
+  font-size: 18px;
+}
+
+.dashboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard li {
+  margin: 10px;
+  font-size: 17px;
+}
+
+.dashboard button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

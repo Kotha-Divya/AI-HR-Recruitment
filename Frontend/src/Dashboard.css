@@ -1,0 +1,187 @@
+/* ==========================================
+   MAIN DASHBOARD
+========================================== */
+
+.dashboard {
+    min-height: 100vh;
+    padding: 40px;
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+.dashboard h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+.dashboard h2 {
+    margin-top: 10px;
+}
+
+.dashboard p {
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   DASHBOARD BUTTONS
+========================================== */
+
+.dashboard-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.dashboard-buttons button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    background: #2563eb;
+    color: white;
+}
+
+.dashboard-buttons button:hover {
+    opacity: 0.85;
+}
+
+
+/* ==========================================
+   GENERAL BUTTON
+========================================== */
+
+.dashboard button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dashboard button:hover {
+    opacity: 0.85;
+}
+
+
+/* ==========================================
+   JOB CARD
+========================================== */
+
+.job-card {
+    background: white;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.job-card h2 {
+    margin-bottom: 15px;
+}
+
+.job-card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.job-card button {
+    margin-top: 10px;
+    background: #2563eb;
+    color: white;
+}
+
+.job-card button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.dashboard form {
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard form input,
+.dashboard form textarea,
+.dashboard form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.dashboard form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.dashboard form button {
+    background: #2563eb;
+    color: white;
+    margin-top: 15px;
+}
+
+
+/* ==========================================
+   APPLICATION / JOB ITEMS
+========================================== */
+
+.dashboard hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+
+/* ==========================================
+   MOBILE SCREEN
+========================================== */
+
+@media (max-width: 600px) {
+
+    .dashboard {
+        padding: 20px;
+    }
+
+    .dashboard h1 {
+        font-size: 26px;
+    }
+
+    .dashboard-buttons {
+        flex-direction: column;
+    }
+
+    .dashboard-buttons button {
+        width: 100%;
+    }
+
+    .job-card {
+        padding: 18px;
+    }
+
+    .dashboard form {
+        padding: 20px;
+    }
+}
